@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    font-size: 10px;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(30, 30, 30);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    height: 40rem;
+    width: 30rem;
+    background-color: #2A4759;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    transition: all .5s linear;
+}
+#img{
+    position: absolute;
+    height: 40rem;
+    transition: all .5s linear;
+    left: -5rem;
+
+}
+#satus, #name{
+    position: absolute;
+    z-index: 1;
+    font-family: "Copperplate Gothic";
+    left: -20rem;
+    background-color: rgb(0, 0, 0);
+}
+#satus{
+    color: rgb(255, 0, 0);
+    padding: .5rem .2rem;
+    bottom: 7rem;
+    transition: all .5s linear;
+}
+#name{
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    bottom: 4.5rem;
+    padding: .5rem .2rem;
+    transition: all .7s linear;
+}
+#btn{
+    position: absolute;
+    z-index: 1;
+    bottom: 0.5rem;
+    right: -10rem;
+    padding: .5rem 1rem;
+    transition: all .5s linear;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: .5rem;
+    background-color: rgb(49, 154, 0);
+}
+.card:hover{
+    scale: 1.03;
+}
+.card:hover #satus{
+    left: 0;
+}
+.card:hover #name{
+    left: 0;
+}
+.card:hover #img{
+    scale: 1.3;
+    left: 2rem;
+    height: 45rem;
+}
+.card:hover #btn{
+    right: 1rem;
+
+}
